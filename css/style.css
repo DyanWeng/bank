@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+img{width:100%;height:100%;display:block;}
+
+html, body {margin: 0 0;padding: 0 0;width: 100%;height: 100%;font-family: "黑体-简";font-size:12px;font-weight:normal;}
+
+.outline {min-width: 1200px;width: 100%;height: auto;background:url(../images/bg.png) no-repeat;}
+.container_block {width: 1200px;height:100%; margin: 0 auto;position: relative;}
+
+
+
+/*****************訂單資訊 開始*****************/
+.info_block{width:100%;height:auto;display:block;margin-top:65px;}
+.info_tittle_block{width:100%;height:145px;display:block;margin-bottom:30px;}
+.tittle{width:175px;height:75px;float:left;margin-right:35px;}
+.tittle_square{width:20px;height:75px;display:inline-block;background:#2484b2;box-shadow:2px 0 0 #026798;margin-right:15px;}
+.tittle_word{width:135px;height:auto;display:inline-block;font-size:30px;color:#333333;vertical-align:top;line-height:30px;font-weight:normal;}
+.tittle_sub{width:135px;height:auto;display:block;font-size:18px;color:#333333;vertical-align:top;line-height:18px;font-weight:lighter;letter-spacing:1px;margin-top:10px;}
+.tittle_sub_icon{width: 16px;height:17px;display:inline-block;margin-right:5px;}
+
+
+.info_tips{width:535px;height:145px;float:left;}
+.info_cross{width:0px;height:0px;float:left; border-style: solid;border-width: 7.5px 15px 7.5px 0;border-color: transparent rgba(108,205,254,0.20) transparent transparent;margin-top:20px;}
+.info_area{width:490px;height:115px;float:right; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:18px;line-height:30px;letter-spacing:1px;}
+
+.info_detail_block{width:100%;height:145px;border:2px solid #2484b2;}
+.info_detail_tittle{width:auto;height:65px;background:#2484b2;color:white;font-size:20px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:3px solid white;font-weight:lighter;}
+.info_detail_tittle:nth-last-child(1){width:auto;height:65px;background:#2484b2;color:white;font-size:20px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:none;font-weight:lighter;}
+
+.info_detail_word{width:auto;height:80px;color:#333333;font-size:20px;letter-spacing:1px;padding-left:25px;text-align:left;font-weight:lighter;font-weight:500;}
+/*****************訂單資訊 結束*****************/
+
+.spreated{width:100%;max-width:1108px; height:15px;display:block;background:url(../images/spreated.png) center no-repeat;background-size:cover;margin-top:60px;margin-bottom:30px;}
+
+/*****************付款方式 開始*****************/
+.pay_outline{width:100%;height:auto;float:left;margin-top:65px;}
+.pay_block{width:100%;height:auto;min-height:400px; float:left;margin-top:35px;}
+.pay_area{width:100%;height:auto;min-height:70px; float:left; margin-bottom:30px;}
+.pay_bar{width:1120px;height:56px;float:right;background:#888888;padding-left:40px;padding-right:20px;line-height:56px;color:white;font-size:25px;letter-spacing:2px;}
+.pay_bar.active{background:#18a1e4;color:#fff000;}
+.pay_bar_sub{font-size:15px;margin-left:15px;font-weight:lighter;cursor:pointer;}
+.pay_bar_cross{width: 0;height: 0;border-style: solid;border-width: 8.5px 0 8.5px 13px;border-color: transparent transparent transparent #ffffff;float:right;margin:19.5px 0;}
+.pay_bar_cross.active{border-width: 13px 8.5px 0 8.5px;border-color:#ffffff transparent transparent transparent ;}
+.pay_check{width:39px;height:39px;float:left;border-radius:500px;border:2px dashed #999999;background:white; position:absolute;z-index:999999;margin-top:-20px;cursor:pointer;}
+.pay_check_icon{width:23px;height:17px;display:none;margin:11px auto;}
+.pay_check.active{border:2px dashed #036697;}
+
+.pay_detail_out{width:1140px;height:auto;float:right;background:#ededed;border-radius:0 0 10px 10px;padding:20px 20px;}
+.pay_detail_area{width:100%;max-width:1080px; height:auto;min-height:70px; float:right;}
+.pay_detail_tittle{width:100%;height:55px;float:right;background:#cccccc;padding-left:40px;padding-right:20px;line-height:55px;color:#ffffff;font-size:20px;letter-spacing:2px;font-weight:lighter;}
+.pay_detail_tittle.active{background:#18a1e4;color:#fff000;}
+.pay_detail_block{width:100%;max-width:1060px;height:auto;float:right;background:#ffffff;padding:15px 40px;border-radius:0 0 10px 10px;}
+
+.pay_info_tips{width:auto;height:65px;float:left;}
+.pay_info_cross{width:0px;height:0px;display:block; border-style: solid;border-width: 0 7.5px 15px 7.5px;;border-color:transparent transparent rgba(108,205,254,0.20) transparent ;margin-left:30px;}
+.pay_info_area{width:1030px;height:20px;display:block; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:18px;line-height:20px;letter-spacing:1px;}
+
+.info_kinds_out{width:100%;height:auto;float:left; margin-top:5px;}
+
+.pay_info_btn{width:130px;height:30px;border-radius:500px;background:#0393d9;box-shadow:2px 2px 0 #036697;display:block;margin:0 auto;margin-top:20px;text-align:center;line-height:30px;font-size:18px;color:#fff000;letter-spacing:2px;transition:all 0.3s;cursor:pointer;}
+.pay_info_btn:hover{background:#2484b2;}
+
+.pay_info_main{width:auto;max-width:460px;height:auto;display:block;margin:0 auto;margin-top:10px;}
+.pay_info_cash{width:auto;height:auto;display:inline-block;font-size:18px;color:#333333;margin-left:40px;}
+.pay_info_number{width:auto;min-width:100px; height:auto;display:inline-block;font-size:18px;color:#0481be;text-align:right;}
+
+.pay_info_tittle{width:100%;height:auto;display: block;}
+.pay_info_tittle_square{width:10px;height:40px;display:inline-block;background:#2484b2;box-shadow:2px 0 0 #026798;margin-right:5px;}
+.pay_info_tittle_word{width:auto;height:auto;display:inline-block;font-size:20px;color:#333333;vertical-align:top;line-height:20px;font-weight:normal;}
+.pay_info_tittle_sub{width:auto;height:auto;display:block;font-size:15px;color:#333333;vertical-align:top;line-height:15px;font-weight:lighter;letter-spacing:1px;margin-top:5px;}
+/*****************付款方式 結束*****************/
+
+
+/*****************Footer 開始*****************/
+.footer{width:100%;min-width:1200px;height:60px;background:#124c68;color:white;font-size:20px;line-height:60px;text-align:center; font-weight:lighter;float:left;}
+/*****************Footer 結束*****************/
+
+
+
+/*Pad版CSS 開始*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+	.tittle{width:100%;height:75px;float:left;text-align:center;}
+	.tittle_square{display:none;}
+	.tittle_word{width:auto;height:auto;display:inline-block;font-size:50px;color:#333333;vertical-align:top;line-height:30px;font-weight:normal;}
+	.tittle_sub{width:auto;height:auto;display:block;font-size:28px;color:#333333;vertical-align:top;line-height:28px;font-weight:lighter;letter-spacing:1px;margin-top:20px;}
+	.info_tips{width:100%;height:135px;float:left;margin-top:20px;margin-bottom:20px;}
+	.info_cross{width:0px;height:0px;float:left; border-style: solid;border-width: 0 7.5px 15px 7.5px;border-color:transparent transparent rgba(108,205,254,0.20)  transparent;margin-top:20px;position:relative;left:50%;margin-left:-7.5px;}
+	.info_area{width:97%;height:70px;float:right; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:25px;line-height:35px;letter-spacing:1px;position:relative;margin:0 0.3%;}
+	
+	.info_detail_tittle{width:auto;height:100px;background:#2484b2;color:white;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:3px solid white;font-weight:lighter;}
+	.info_detail_tittle:nth-last-child(1){width:auto;height:100px;background:#2484b2;color:white;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:none;font-weight:lighter;}
+	.info_detail_word{width:auto;height:120px;color:#333333;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;font-weight:lighter;font-weight:500;}
+	
+	.pay_check{width:60px;height:60px;float:left;border-radius:500px;border:3px dashed #999999;background:white; position:absolute;z-index:999999;margin-top:-20px;cursor:pointer;}
+	.pay_check_icon{width:46px;height:34px;display:none;margin:13px auto;}
+	.pay_check.active{border:3px dashed #036697;}
+	
+	.pay_bar{width:1100px;height:100px;float:right;background:#888888;padding-left:60px;padding-right:20px;line-height:100px;color:white;font-size:30px;letter-spacing:2px;}
+	.pay_bar_sub{font-size:20px;margin-left:15px;font-weight:lighter;cursor:pointer;}
+	.pay_bar_cross{width: 0;height: 0;border-style: solid;border-width: 13px 0 13px 26px;border-color: transparent transparent transparent #ffffff;float:right;margin:37px 0;}
+	.pay_bar_cross.active{border-width: 26px 13px 0 13px;border-color:#ffffff transparent transparent transparent ;}
+	
+	.pay_detail_tittle{width:100%;height:100px;float:right;background:#cccccc;padding-left:40px;padding-right:20px;line-height:100px;color:#ffffff;font-size:30px;letter-spacing:2px;font-weight:lighter;}
+	
+	.pay_info_area{width:1030px;height:70px;display:block; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:25px;line-height:35px;letter-spacing:1px;}
+	
+	.tittle_sub_icon{width: 20px;height:21.25px;display:inline-block;margin-right:5px;}
+	
+	.pay_info_btn{width:230px;height:50px;border-radius:500px;background:#0393d9;box-shadow:4px 4px 0 #036697;display:block;margin:0 auto;margin-top:30px;text-align:center;line-height:50px;font-size:25px;color:#fff000;letter-spacing:2px;transition:all 0.3s;cursor:pointer;}
+	.pay_info_btn:hover{background:#2484b2;}
+	
+	.pay_info_main{width:100%;height:auto;display:block;margin:0 auto;margin-top:10px;}
+	.pay_info_cash{width:auto;height:auto;display:inline-block;font-size:25px;color:#333333;margin-left:75px;}
+	.pay_info_number{width:auto;height:auto;display:inline-block;font-size:25px;color:#0481be;text-align:right;margin-top:30px;}
+
+	.pay_info_tittle{width:100%;height:auto;display: block;margin-top:20px;}
+	.pay_info_tittle_square{width:20px;height:60px;display:inline-block;background:#2484b2;box-shadow:2px 0 0 #026798;margin-right:5px;}
+	.pay_info_tittle_word{width:auto;height:auto;display:inline-block;font-size:25px;color:#333333;vertical-align:top;line-height:25px;font-weight:normal;}
+	.pay_info_tittle_sub{width:auto;height:auto;display:block;font-size:20px;color:#333333;vertical-align:top;line-height:20px;font-weight:lighter;letter-spacing:1px;margin-top:10px;}
+	
+}
+/*Pad版CSS 結束*/
+
+/*手機版CSS 開始*/
+@media only screen and (max-width: 999px){
+	.tittle{width:100%;height:75px;float:left;text-align:center;}
+	.tittle_square{display:none;}
+	.tittle_word{width:auto;height:auto;display:inline-block;font-size:50px;color:#333333;vertical-align:top;line-height:30px;font-weight:normal;}
+	.tittle_sub{width:auto;height:auto;display:block;font-size:28px;color:#333333;vertical-align:top;line-height:28px;font-weight:lighter;letter-spacing:1px;margin-top:20px;}
+	.info_tips{width:100%;height:135px;float:left;margin-top:20px;margin-bottom:20px;}
+	.info_cross{width:0px;height:0px;float:left; border-style: solid;border-width: 0 7.5px 15px 7.5px;border-color:transparent transparent rgba(108,205,254,0.20)  transparent;margin-top:20px;position:relative;left:50%;margin-left:-7.5px;}
+	.info_area{width:97%;height:70px;float:right; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:25px;line-height:35px;letter-spacing:1px;position:relative;margin:0 0.3%;}
+	
+	.info_detail_tittle{width:auto;height:100px;background:#2484b2;color:white;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:3px solid white;font-weight:lighter;}
+	.info_detail_tittle:nth-last-child(1){width:auto;height:100px;background:#2484b2;color:white;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;border-right:none;font-weight:lighter;}
+	.info_detail_word{width:auto;height:120px;color:#333333;font-size:30px;letter-spacing:1px;padding-left:25px;text-align:left;font-weight:lighter;font-weight:500;}
+	
+	.pay_check{width:60px;height:60px;float:left;border-radius:500px;border:3px dashed #999999;background:white; position:absolute;z-index:999999;margin-top:-20px;cursor:pointer;}
+	.pay_check_icon{width:46px;height:34px;display:none;margin:13px auto;}
+	.pay_check.active{border:3px dashed #036697;}
+	
+	.pay_bar{width:1100px;height:100px;float:right;background:#888888;padding-left:60px;padding-right:20px;line-height:100px;color:white;font-size:30px;letter-spacing:2px;}
+	.pay_bar_sub{font-size:20px;margin-left:15px;font-weight:lighter;cursor:pointer;}
+	.pay_bar_cross{width: 0;height: 0;border-style: solid;border-width: 13px 0 13px 26px;border-color: transparent transparent transparent #ffffff;float:right;margin:37px 0;}
+	.pay_bar_cross.active{border-width: 26px 13px 0 13px;border-color:#ffffff transparent transparent transparent ;}
+	
+	.pay_detail_tittle{width:100%;height:100px;float:right;background:#cccccc;padding-left:40px;padding-right:20px;line-height:100px;color:#ffffff;font-size:30px;letter-spacing:2px;font-weight:lighter;}
+	
+	.pay_info_area{width:1030px;height:70px;display:block; padding:15px 15px;background:rgba(108,206,254,0.20);border-radius:10px;font-size:25px;line-height:35px;letter-spacing:1px;}
+	
+	.tittle_sub_icon{width: 20px;height:21.25px;display:inline-block;margin-right:5px;}
+	
+	.pay_info_btn{width:230px;height:50px;border-radius:500px;background:#0393d9;box-shadow:4px 4px 0 #036697;display:block;margin:0 auto;margin-top:30px;text-align:center;line-height:50px;font-size:25px;color:#fff000;letter-spacing:2px;transition:all 0.3s;cursor:pointer;}
+	.pay_info_btn:hover{background:#2484b2;}
+	
+	.pay_info_main{width:100%;height:auto;display:block;margin:0 auto;margin-top:10px;}
+	.pay_info_cash{width:auto;height:auto;display:inline-block;font-size:25px;color:#333333;margin-left:75px;}
+	.pay_info_number{width:auto;height:auto;display:inline-block;font-size:25px;color:#0481be;text-align:right;margin-top:30px;}
+
+	.pay_info_tittle{width:100%;height:auto;display: block;margin-top:20px;}
+	.pay_info_tittle_square{width:20px;height:60px;display:inline-block;background:#2484b2;box-shadow:2px 0 0 #026798;margin-right:5px;}
+	.pay_info_tittle_word{width:auto;height:auto;display:inline-block;font-size:25px;color:#333333;vertical-align:top;line-height:25px;font-weight:normal;}
+	.pay_info_tittle_sub{width:auto;height:auto;display:block;font-size:20px;color:#333333;vertical-align:top;line-height:20px;font-weight:lighter;letter-spacing:1px;margin-top:10px;}
+	
+}
+/*手機版CSS 結束*/

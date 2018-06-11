@@ -1,0 +1,323 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>收银台</title>
+
+<!--Css 开始-->
+<link rel="stylesheet" href="css/style.css">
+<!--Css 结束-->
+
+
+<!--JQ 开始-->
+<script type="text/javascript" src="js/jquery1.12.4.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#bank_check,#bank_bar").click(function(){
+  $("#bank_bar,#bank_check,#bank_cross").addClass("active");
+  $("#bank_v").show();
+  $("#one_v,#quick_v,#one_v,#code_v").hide();
+  $("#bank_block").slideDown(500);
+  $("#one_bar,#one_check,#one_cross,#quick_check,#quick_bar,#quick_cross,#code_check,#code_bar,#code_cross").removeClass("active");
+  $("#one_block,#onlie_block,#code_block").slideUp(500);
+  });
+	
+  $("#online_bar").click(function(){
+  $("#online_bar,#online_cross").addClass("active");
+  $("#online_detail").slideDown(500);
+		
+  });
+	
+	
+	
+	
+	$("#one_check,#one_bar").click(function(){
+  $("#one_check,#one_bar,#one_cross").addClass("active");
+  $("#one_v").show();
+  $("#bank_v,#quick_v,#code_v").hide();
+  $("#one_block").slideDown(500);
+  $("#bank_bar,#bank_check,#bank_cross,#quick_check,#quick_bar,#quick_cross,#code_check,#code_bar,#code_cross").removeClass("active");
+  $("#bank_block").slideUp(500);
+	});
+		
+	$("#one_wechat").click(function(){
+  $("#one_wechat").addClass("active");
+  $("#one_yl,#one_dj").removeClass("active");
+  });
+	
+	$("#one_yl").click(function(){
+  $("#one_yl").addClass("active");
+	$("#one_wechat,#one_dj").removeClass("active");
+  });
+	
+	$("#one_dj").click(function(){
+  $("#one_dj").addClass("active");
+	$("#one_wechat,#one_yl").removeClass("active");
+  });
+	
+	$("#quick_check,#quick_bar").click(function(){
+  $("#quick_check,#quick_bar").addClass("active");
+  $("#quick_v").show();
+  $("#bank_v,#one_v,#code_v").hide();
+  $("#bank_bar,#bank_check,#bank_cross,#one_check,#one_bar,#one_cross,#code_check,#code_bar,#code_cross").removeClass("active");
+  $("#one_block,#bank_block,#code_block").slideUp(500);
+	});
+	
+	$("#code_check,#code_bar").click(function(){
+  $("#code_bar,#code_check,#code_cross").addClass("active");
+  $("#code_v").show();
+  $("#bank_v,#one_v,#quick_v").hide();
+  $("#code_block").slideDown(500);
+  $("#bank_bar,#bank_check,#bank_cross,#quick_check,#quick_bar,#one_check,#one_bar,#one_cross").removeClass("active");
+  $("#one_block,#bank_block,#quick_block").slideUp(500);
+  });
+	
+  $("#code_wechat").click(function(){
+  $("#code_wechat,#code_wechat_cross").addClass("active");
+  $("#code_wechat_block").slideDown(500);
+  $("#code_dj,#code_dj_cross,#code_qq,#code_qq_cross,#code_zfb,#code_zfb_cross").removeClass("active");
+  $("#code_dj_block,#code_qq_block,#code_zfb_block").slideUp(500);
+  });
+
+  $("#code_dj").click(function(){
+  $("#code_dj,#code_dj_cross").addClass("active");
+  $("#code_dj_block").slideDown(500);
+  $("#code_wechat,#code_wechat_cross,#code_qq,#code_qq_cross,#code_zfb,#code_zfb_cross").removeClass("active");
+  $("#code_wechat_block,#code_qq_block,#code_zfb_block").slideUp(500);
+  });
+	
+  $("#code_qq").click(function(){
+  $("#code_qq,#code_qq_cross").addClass("active");
+  $("#code_qq_block").slideDown(500);
+  $("#code_wechat,#code_wechat_cross,#code_dj,#code_dj_cross,#code_zfb,#code_zfb_cross").removeClass("active");
+  $("#code_wechat_block,#code_dj_block,#code_zfb_block").slideUp(500);
+  });
+	
+  $("#code_zfb").click(function(){
+  $("#code_zfb,#code_qq_cross").addClass("active");
+  $("#code_zfb_block").slideDown(500);
+  $("#code_wechat,#code_wechat_cross,#code_dj,#code_dj_cross,#code_qq,#code_qq_cross").removeClass("active");
+  $("#code_wechat_block,#code_dj_block,#code_qq_block").slideUp(500);
+  });
+	
+	
+});
+	
+</script>
+<!--JQ 结束-->
+</head>
+
+<body>
+
+<div class="outline">
+	<div class="container_block">
+		<!--訂單資訊 開始-->
+		<div class="info_block">
+			<div class="info_tittle_block">
+			<div class="tittle">
+				<div class="tittle_square"></div>
+				<div class="tittle_word">
+				订单資訊
+				<span class="tittle_sub">INFORMATION</span>
+				</div>
+				
+			</div>
+			<div class="info_tips">
+				<div class="info_cross"></div>
+				<div class="info_area">
+				<span class="tittle_sub_icon"><img src="images/tips.png" width="17" height="18" alt=""/></span>尊敬的用户,因近期电信诈骗类案件频发,有不法分子冒充银行、公检法、企业老板等方式进行诈骗。<br>
+				提醒您：请于付款前再次核对付款信息及用途,以避免造成资金损失。
+			  </div>
+			</div>
+			</div>
+			
+			<!--明細 開始-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_detail_block">
+                 <thead>
+                   <tr>
+
+                     <th class="info_detail_tittle" >订单号</th>
+                     <th class="info_detail_tittle">金额（元）</th>
+                     <th class="info_detail_tittle" >下单时间</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td class="info_detail_word" >register7186551385106223</td>
+                     <td class="info_detail_word" >50.00</td>
+                     <td class="info_detail_word" >2018-05-16 15:59:08</td>
+                   </tr>
+                 </tbody>     
+             </table>
+             <!--明細 結束-->
+		</div>
+		<!--訂單資訊 結束-->
+		<div class="spreated"></div>
+		
+		<!--付款方式 開始-->
+		<div class="pay_outlline">
+			<div class="info_tittle_block">
+			
+			<div class="tittle">
+				<div class="tittle_square"></div>
+				<div class="tittle_word">
+				付款方式
+				<span class="tittle_sub">EASY TO PAY</span>
+				</div>
+			</div>
+			
+			<div class="pay_outline">
+			
+				<!--網銀匯款 開始-->
+				<div  class="pay_area">
+					<div id="bank_check" class="pay_check"><div id="bank_v" class="pay_check_icon"><img src="images/check.png" width="23" height="17" alt=""/></div></div>
+					<div id="bank_bar" class="pay_bar">
+						网银汇款<span class="pay_bar_sub">充值限额10.00~最高限额20,000.00,充值时限15分钟</span>
+						<span id="bank_cross" class="pay_bar_cross"></span>
+					</div>
+					<div id="bank_block" class="pay_detail_out" style="display:none;">
+						<div class="pay_detail_area">
+							<div id="online_bar" class="pay_detail_tittle">在线充值<span id="online_cross" class="pay_bar_cross"></span></div>
+							<div id="online_detail" class="pay_detail_block" style="display:none;">
+								<div class="pay_info_tips"></div>
+								<div class="pay_info_cross"></div>
+								<div class="pay_info_area"><span class="tittle_sub_icon"><img src="images/tips.png" width="17" height="18" alt=""/></span>平台会不定期更换收款银行卡,切勿重复使用之前的纪录充值,否则造成的充值到错误帐号、资金丢失,平台无法处理。</div>
+								<div class="pay_info_btn">下一步</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--網銀匯款 結束-->
+				
+				<!--一鍵支付 開始-->
+				<div class="pay_area">
+					<div id="one_check" class="pay_check"><div id="one_v" class="pay_check_icon"><img src="images/check.png" width="23" height="17" alt=""/></div></div>
+					<div id="one_bar" class="pay_bar">
+						一键支付<span class="pay_bar_sub">充值限额10.00~最高限额20,000.00,充值时限15分钟</span>
+						<span id="one_cross" class="pay_bar_cross"></span>
+					</div>
+					<div id="one_block" class="pay_detail_out" style="display:none;">
+						<div class="pay_detail_area">
+							<div class="info_kinds_out"><div id="one_wechat" class="pay_detail_tittle">微信支付 <span class="pay_bar_cross"></span></div></div>
+							<div class="info_kinds_out"><div id="one_yl" class="pay_detail_tittle ">银联支付 <span class="pay_bar_cross"></span></div></div>
+							<div class="info_kinds_out"><div id="one_dj" class="pay_detail_tittle ">京东支付 <span class="pay_bar_cross"></span></div></div>
+						</div>
+					</div>
+				</div>
+				<!--一鍵支付 結束-->
+				
+				<!--快捷支付 開始-->
+				<div class="pay_area">
+					<div id="quick_check" class="pay_check"><div id="quick_v" class="pay_check_icon"><img src="images/check.png" width="23" height="17" alt=""/></div></div>
+					<div id="quick_bar" class="pay_bar">
+						快捷支付<span class="pay_bar_sub">充值限额10.00~最高限额20,000.00,充值时限15分钟</span>
+						<span class="pay_bar_cross"></span>
+					</div>
+				</div>
+				<!--快捷支付 結束-->
+				
+				<!--掃碼支付 開始-->
+				<div class="pay_area">
+					<div id="code_check" class="pay_check"><div id="code_v" class="pay_check_icon"><img src="images/check.png" width="23" height="17" alt=""/></div></div>
+					<div id="code_bar" class="pay_bar">
+						扫码支付<span class="pay_bar_sub">充值限额10.00~最高限额20,000.00,充值时限15分钟</span>
+						<span id="code_cross" class="pay_bar_cross"></span>
+					</div>
+					<div style="display:none;" id="code_block" class="pay_detail_out">
+						<div class="pay_detail_area">
+							<div class="info_kinds_out">
+							<div id="code_wechat" class="pay_detail_tittle">微信扫码 <span id="code_wechat_cross" class="pay_bar_cross"></span></div>
+							<div id="code_wechat_block" class="pay_detail_block" style="display:none;">
+								<div class="pay_info_tittle">
+									<div class="pay_info_tittle_square"></div>
+									<div class="pay_info_tittle_word">
+									微信支付二维码
+									<span class="pay_info_tittle_sub">THE WECHAT CODE</span>
+									</div>
+								</div>
+								
+								<div class="pay_info_main">
+							    <img style="width:204px;height:55px;display:inline-block;" src="images/wechat.png" width="204" height="55" alt=""/>
+							    <div class="pay_info_cash">充值金额 : <span class="pay_info_number">¥ 50.00</span></div>
+							    </div>
+							  <div class="pay_info_btn">生成二维码</div>
+							</div>
+							</div>
+							
+							<div class="info_kinds_out">
+							<div id="code_dj" class="pay_detail_tittle">京东扫码 <span id="code_dj_cross" class="pay_bar_cross"></span></div>
+							<div id="code_dj_block" class="pay_detail_block" style="display:none;">
+								<div class="pay_info_tittle">
+									<div class="pay_info_tittle_square"></div>
+									<div class="pay_info_tittle_word">
+									京东支付二维码
+									<span class="pay_info_tittle_sub">THE JD CODE</span>
+									</div>
+								</div>
+								
+								<div class="pay_info_main">
+							    <img style="width:204px;height:55px;display:inline-block;" src="images/jd.png" width="204" height="55" alt=""/>
+							    <div class="pay_info_cash">充值金额 : <span class="pay_info_number">¥ 50.00</span></div>
+							    </div>
+							  <div class="pay_info_btn">生成二维码</div>
+							</div>
+							</div>
+							
+							<div class="info_kinds_out">
+							<div id="code_qq" class="pay_detail_tittle ">QQ扫码 <span id="code_qq_cross" class="pay_bar_cross"></span></div>
+							<div id="code_qq_block" class="pay_detail_block" style="display:none;">
+								<div class="pay_info_tittle">
+									<div class="pay_info_tittle_square"></div>
+									<div class="pay_info_tittle_word">
+									QQ支付二维码
+									<span class="pay_info_tittle_sub">THE QQ CODE</span>
+									</div>
+								</div>
+							
+								<div class="pay_info_main">
+							    <img style="width:204px;height:55px;display:inline-block;" src="images/qq.png" width="204" height="55" alt=""/>
+							    <div class="pay_info_cash">充值金额 : <span class="pay_info_number">¥ 50.00</span></div>
+							    </div>
+							  <div class="pay_info_btn">生成二维码</div>
+							</div>
+							</div>
+							
+							<div class="info_kinds_out">
+							<div id="code_zfb" class="pay_detail_tittle">支付宝支付扫码 <span id="code_zfb_cross" class="pay_bar_cross"></span></div>
+							<div id="code_zfb_block" class="pay_detail_block" style="display:none;">
+								<div class="pay_info_tittle">
+									<div class="pay_info_tittle_square"></div>
+									<div class="pay_info_tittle_word">
+									支付宝二维码
+									<span class="pay_info_tittle_sub">THE ALIPAY CODE</span>
+									</div>
+								</div>
+								
+								<div class="pay_info_main">
+							    <img style="width:204px;height:55px;display:inline-block;" src="images/zfb.png" width="204" height="55" alt=""/>
+							    <div class="pay_info_cash">充值金额 : <span class="pay_info_number">¥ 50.00</span></div>
+							    </div>
+							  <div class="pay_info_btn">生成二维码</div>
+							</div>
+							</div>
+							
+					</div>
+				</div>
+				
+
+			</div>
+			<!--掃碼支付 結束-->
+			
+			</div>
+			</div>
+		</div>
+		<!--付款方式 結束-->
+		
+		
+	</div>
+	
+	<div class="footer">Copyright © 1995-2012 Apollo All rights reserved.</div>
+</div>
+
+
+</body>
+</html>
